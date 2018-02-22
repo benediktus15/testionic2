@@ -1,0 +1,108 @@
+<ion-header>
+
+  <ion-navbar color="custom">
+    <ion-title>Transfer</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="presentAlert()">
+        <ion-icon name="help-circle" ></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content >
+  <div padding>
+    <h1>Test</h1>
+  </div>
+  
+  <!-- <ion-grid [(ngModel)]="qty"> -->
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <button ion-button large clear full no-margin color="custom">
+          <ion-option [value]="1" selected="true"><h1>1</h1></ion-option>
+        </button>
+      </ion-col>
+      <ion-col>
+        <button ion-button large clear full no-margin color="custom">
+            <ion-option [value]="2" selected="true"><h1>2</h1></ion-option>
+        </button>
+      </ion-col>
+      <ion-col>
+        <button ion-button large clear full no-margin color="custom">
+            <ion-option [value]="3" selected="true"><h1>3</h1></ion-option>
+        </button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <button ion-button large clear full no-margin color="custom">
+            <ion-option [value]="4" selected="true"><h1>4</h1></ion-option>
+        </button>
+      </ion-col>
+      <ion-col>
+        <button ion-button large clear full no-margin color="custom">
+            <ion-option [value]="5" selected="true"><h1>5</h1></ion-option>
+        </button>
+      </ion-col>
+      <ion-col>
+        <button ion-button large clear full no-margin color="custom">
+            <ion-option [value]="6" selected="true"><h1>6</h1></ion-option>
+        </button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <button ion-button large clear full no-margin color="custom">
+            <ion-option [value]="7" selected="true"><h1>7</h1></ion-option>
+        </button>
+      </ion-col>
+      <ion-col>
+        <button ion-button large clear full no-margin color="custom">
+            <ion-option [value]="8" selected="true"><h1>8</h1></ion-option>
+        </button>
+      </ion-col>
+      <ion-col>
+        <button ion-button large clear full no-margin color="custom">
+            <ion-option [value]="9" selected="true"><h1>9</h1></ion-option>
+        </button>
+      </ion-col>
+    </ion-row>
+    <ion-row align-items-end>
+      <ion-col>
+        <button ion-button large clear full no-margin color="custom">
+            <!-- <ion-option [value]="." selected="true"><h1>.</h1></ion-option> -->
+            <h1>.</h1>
+        </button>
+      </ion-col>
+      <ion-col>
+        <button ion-button large clear full no-margin color="custom">
+            <ion-option [value]="0" selected="true"><h1>0</h1></ion-option>
+        </button>
+      </ion-col>
+      <ion-col>
+        <button ion-button large clear full no-margin color="custom">
+          <ion-icon name="backspace"></ion-icon>
+        </button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+<ion-footer>
+  <ion-grid no-padding>
+    <ion-row>
+      <ion-col >
+        <button ion-button large full no-margin color="custom" (click)="request()">
+          REQUEST
+        </button>
+      </ion-col>
+      <ion-col>
+        <button ion-button large full no-margin color="custom" (click)="send()">
+          SEND
+        </button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-footer>

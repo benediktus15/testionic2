@@ -1,0 +1,39 @@
+<ion-header>
+
+  <ion-navbar color="custom">
+    <ion-title>Profile</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="logout()">
+        <ion-icon name="log-out"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <div id="profile-bg" [ngStyle]="{'background-image': 'url(' + imageUrl +')'}"></div>
+  <div id="content">
+    <div id="profile-info">
+      <img id="profile-image" src="https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?w=940&h=650&auto=compress&cs=tinysrgbg">
+      <h3 id="profile-name">Benediktus</h3>
+    </div>
+  </div>
+  
+  <div id="info">
+    <h5 class="info-des">Your Info</h5>
+  </div>
+
+
+  <ion-list>
+    <ion-item>
+        <ion-icon name="school" item-start></ion-icon>
+        <p>Universitas Katolik Parahyangan</p>
+    </ion-item>
+    <ion-item>
+        <ion-icon name="mail" item-start></ion-icon>
+        <p>benediktus@gmail.com</p>
+    </ion-item>
+  </ion-list>
+</ion-content>
