@@ -5,12 +5,13 @@ import { MyApp } from './app.component';
 
 import { TabsPage } from '../pages/tabs/tabs';
 import { LoginPage } from '../pages/login/login';
+import { ProfilePage } from '../pages/profile/profile';
 import { ListPage } from '../pages/list/list';
 import { DetailPage } from '../pages/detail/detail';
-import { SavePage } from '../pages/save/save';
 import { EmployeePage } from '../pages/employee/employee';
-import { ProfilePage } from '../pages/profile/profile';
+import { DetailEmployeePage } from '../pages/detail-employee/detail-employee';
 import { AddEmployeePage } from '../pages/add-employee/add-employee';
+import { SavePage } from '../pages/save/save';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -23,12 +24,13 @@ import { EmployeeProvider } from '../providers/employee/employee';
     MyApp,
     TabsPage,
     LoginPage, 
+    ProfilePage,
     ListPage,
     DetailPage,
-    SavePage,
     EmployeePage,
-    ProfilePage,
-    AddEmployeePage
+    DetailEmployeePage,
+    AddEmployeePage,
+    SavePage
   ],
   imports: [
     BrowserModule,
@@ -38,13 +40,14 @@ import { EmployeeProvider } from '../providers/employee/employee';
   entryComponents: [
     MyApp,
     TabsPage,
-    LoginPage,
+    LoginPage, 
+    ProfilePage,
     ListPage,
     DetailPage,
-    SavePage,
     EmployeePage,
-    ProfilePage,
-    AddEmployeePage
+    DetailEmployeePage,
+    AddEmployeePage,
+    SavePage
   ],
   providers: [
     StatusBar,

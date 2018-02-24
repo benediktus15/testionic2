@@ -1,0 +1,34 @@
+<ion-header>
+
+  <ion-navbar color="custom">
+    <ion-title>Detail</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <div id="profile-bg" [ngStyle]="{'background-image': 'url(' + imageUrl +')'}"></div>
+  <div id="content">
+    <div id="profile-info">
+      <!-- <img id="profile-image" src="{{ this.dataEmployee.photo }}"> -->
+      <!-- <h3 id="profile-name">{{ this.dataEmployee.name }}</h3> -->
+    </div>
+  </div>
+  
+  <div id="info">
+    <h5 class="info-des">Your Info</h5>
+  </div>
+
+
+  <ion-list>
+    <ion-item>
+        <ion-icon name="school" item-start></ion-icon>
+        <!-- <p>{{ this.dataEmployee.position }}</p> -->
+    </ion-item>
+    <ion-item>
+        <ion-icon name="mail" item-start></ion-icon>
+        <!-- <p>benediktus@gmail.com</p> -->
+    </ion-item>
+  </ion-list>
+</ion-content>

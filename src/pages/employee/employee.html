@@ -14,7 +14,7 @@
 
 <ion-content>
   <ion-list inset>
-    <button ion-item *ngFor="let e of this.employeeProvider.listEmployee() | async">
+    <button ion-item *ngFor="let e of this.employeeProvider.listEmployee() | async" (click)="detailEmployee(employee)">
       <ion-avatar item-start>
         <img src="{{ e.photo }}" alt="{{ e.name }}">
       </ion-avatar>

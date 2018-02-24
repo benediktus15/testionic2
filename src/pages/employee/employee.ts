@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { EmployeeProvider } from '../../providers/employee/employee';
 import { AddEmployeePage } from '../add-employee/add-employee';
+import { DetailEmployeePage } from '../detail-employee/detail-employee';
 
 @IonicPage()
 @Component({
@@ -17,6 +18,10 @@ export class EmployeePage {
     this.navCtrl.push(AddEmployeePage);
   }
   
+  detailEmployee(emp) {
+    this.navCtrl.push(DetailEmployeePage, { employee: emp })
+  }
+
   ionViewDidLoad() {
     console.log('ionViewDidLoad EmployeePage');
   }

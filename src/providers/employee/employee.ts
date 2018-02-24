@@ -65,6 +65,10 @@ export class EmployeeProvider {
     })
   };
 
+  detailEmployee(id) {
+    return this.employee[id];
+  }
+
   addEmployee(dataEmployee){
     this.employee.push(dataEmployee);
   }
