@@ -1,0 +1,31 @@
+<ion-header>
+
+  <ion-navbar color="custom">
+    <ion-title>New</ion-title>  
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content>
+<ion-list>
+  <ion-item>
+    <ion-label color="custom" stacked>Name</ion-label>
+    <ion-input type="text" placeholder="" [(ngModel)]="this.dataEmployee.name"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label color="custom" stacked>Position</ion-label>
+    <ion-input type="text" placeholder="" [(ngModel)]="this.dataEmployee.position"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label color="custom" stacked>Avatar</ion-label>
+    <ion-input type="file" [(ngModel)]="this.dataEmployee.photo"></ion-input>
+  </ion-item>
+</ion-list>
+<div padding>
+  <button ion-button color="custom" (click)="save()">
+    <!-- <ion-icon name="archive"> </ion-icon> -->
+    Save
+  </button>
+</div>
+<!-- https://forum.ionicframework.com/t/image-input-from-user-and-upload-to-database/101163 -->
+</ion-content>

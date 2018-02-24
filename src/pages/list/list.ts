@@ -4,13 +4,6 @@ import { BeritaProvider } from '../../providers/berita/berita';
 import { DetailPage } from '../detail/detail';
 import { SavePage } from '../save/save';
 
-/**
- * Generated class for the ListPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-
 @IonicPage()
 @Component({
   selector: 'page-list',

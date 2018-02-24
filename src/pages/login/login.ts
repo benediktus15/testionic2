@@ -20,10 +20,10 @@ export class LoginPage {
 
   ok() {
     console.log('ok'+ this.password)
-    if(this.password == '123') {
+    if(this.username == 'user' && this.password == '123') {
       this.navCtrl.push(TabsPage)
     } else {
-      this.error="Masukin password dengan benar"
+      this.error="username: user; pass: 123"
     }
   }
 
