@@ -9,52 +9,62 @@ export class EmployeeProvider {
     {
       name: 'Employee01',
       position: '1',
-      photo: '../assets/imgs/boy.png'
+      photo: '../assets/imgs/boy.png',
+      email: 'emp1@employee.com'
     },
     {
       name: 'Employee02',
       position: '2',
-      photo: '../assets/imgs/boy.png'
+      photo: '../assets/imgs/boy.png',
+      email: 'emp2@employee.com'
     },
     {
       name: 'Employee03',
       position: '3',
-      photo: '../assets/imgs/boy.png'
+      photo: '../assets/imgs/boy.png',
+      email: 'emp3@employee.com'
     },
     {
       name: 'Employee04',
       position: '4',
-      photo: '../assets/imgs/boy.png'
+      photo: '../assets/imgs/boy.png',
+      email: 'emp4@employee.com'
     },
     {
       name: 'Employee05',
       position: '5',
-      photo: '../assets/imgs/boy.png'
+      photo: '../assets/imgs/boy.png',
+      email: 'emp5@employee.com'
     },
     {
       name: 'Employee06',
       position: '6',
-      photo: '../assets/imgs/boy.png'
+      photo: '../assets/imgs/boy.png',
+      email: 'emp6@employee.com'
     },
     {
       name: 'Employee07',
       position: '7',
-      photo: '../assets/imgs/boy.png'
+      photo: '../assets/imgs/boy.png',
+      email: 'emp7@employee.com'
     },
     {
       name: 'Employee08',
       position: '8',
-      photo: '../assets/imgs/boy.png'
+      photo: '../assets/imgs/boy.png',
+      email: 'emp8@employee.com'
     },
     {
       name: 'Employee09',
       position: '9',
-      photo: '../assets/imgs/boy.png'
+      photo: '../assets/imgs/boy.png',
+      email: 'emp9@employee.com'
     },
     {
       name: 'Employee10',
       position: '10',
-      photo: '../assets/imgs/boy.png'
+      photo: '../assets/imgs/boy.png',
+      email: 'emp10@employee.com'
     }
   ];
 

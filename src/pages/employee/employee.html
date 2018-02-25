@@ -2,11 +2,11 @@
 
   <ion-navbar color="custom">
     <ion-title>Employee</ion-title>
-    <ion-buttons end>
+    <!-- <ion-buttons end>
       <button ion-button icon-only (click)="addEmployee()">
         <ion-icon name="person-add"></ion-icon>
       </button>
-    </ion-buttons>
+    </ion-buttons> -->
   </ion-navbar>
 
 </ion-header>
@@ -14,7 +14,7 @@
 
 <ion-content>
   <ion-list inset>
-    <button ion-item *ngFor="let e of this.employeeProvider.listEmployee() | async" (click)="detailEmployee(employee)">
+    <button ion-item *ngFor="let e of this.employeeProvider.listEmployee() | async" (click)="detailEmployee(e)">
       <ion-avatar item-start>
         <img src="{{ e.photo }}" alt="{{ e.name }}">
       </ion-avatar>

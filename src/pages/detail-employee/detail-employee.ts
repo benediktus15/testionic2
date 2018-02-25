@@ -12,7 +12,8 @@ export class DetailEmployeePage {
   private dataEmployee = {
     name: '',
     position: '',
-    photo: ''
+    photo: '',
+    email: ''
   }
 
   imageUrl: string = '../../assets/imgs/bg1.jpeg';
