@@ -1,7 +1,7 @@
 <ion-header>
 
   <ion-navbar color="custom">
-    <ion-title>List</ion-title>
+    <ion-title>Berita</ion-title>
     <ion-buttons end>
       <button ion-button icon-only (click)="input()">
         <ion-icon name="add"></ion-icon>
@@ -14,13 +14,13 @@
 
 <ion-content>
   <ion-list>
-    <ion-item *ngFor="let berita of this.beritaProvider.listBerita() | async" (click)="detail(berita)">
+    <ion-item *ngFor="let berita of this.beritaProvider.listBerita() | async">
       <ion-thumbnail item-start>
         <img src="{{ berita.photo }}" alt="picture">
       </ion-thumbnail>
       <h2>{{ berita.title }}</h2>
       <p>{{ berita.time}}</p>
-      <ion-note item-end class="ion-note">Open</ion-note>
+      <button ion-button clear item-end (click)="detail(berita)">View</button>
     </ion-item>
   </ion-list>
 </ion-content>
