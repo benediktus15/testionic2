@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, App } from 'ionic-angular';
 
 import { LoginPage } from '../login/login';
+import { TransferPage } from '../transfer/transfer';
 
 @IonicPage()
 @Component({
@@ -17,6 +18,10 @@ export class ProfilePage {
 
   logout() {
     this.app.getRootNav().setRoot(LoginPage);
+  }
+
+  transfer() {
+    this.navCtrl.push(TransferPage)
   }
 
   ionViewDidLoad() {

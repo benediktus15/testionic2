@@ -13,6 +13,8 @@ import { DetailEmployeePage } from '../pages/detail-employee/detail-employee';
 import { AddEmployeePage } from '../pages/add-employee/add-employee';
 import { SavePage } from '../pages/save/save';
 
+import { TransferPage } from '../pages/transfer/transfer'
+
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { BeritaProvider } from '../providers/berita/berita';
@@ -30,7 +32,8 @@ import { EmployeeProvider } from '../providers/employee/employee';
     EmployeePage,
     DetailEmployeePage,
     AddEmployeePage,
-    SavePage
+    SavePage,
+    TransferPage
   ],
   imports: [
     BrowserModule,
@@ -47,7 +50,8 @@ import { EmployeeProvider } from '../providers/employee/employee';
     EmployeePage,
     DetailEmployeePage,
     AddEmployeePage,
-    SavePage
+    SavePage,
+    TransferPage
   ],
   providers: [
     StatusBar,
